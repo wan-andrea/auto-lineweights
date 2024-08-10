@@ -41,7 +41,7 @@ The first dataset consisted of curve attributes. This means that each line item 
 
 The .pkl files are named by drawing number, and contain all the curve attributes for each curve in each drawing. Because the dataset performed poorly in early experiments, it is an incomplete dataset consisting of only information from the first ~30 drawings.
 
-### Scripts used
+#### Scripts used
 The get_features.gh script runs on Rhino files to get the label by the layer name. An improved script get_features_by_color.gh instead uses the curve color to get the label (Profile = red, Contour = green, Detail = blue, Cut = magenta).
 
 The functions.py provides all the functions which are used in main.py, which uses scikit-learn implementations of logistic regression, decision trees, etc. on the curve attributes extracted.
