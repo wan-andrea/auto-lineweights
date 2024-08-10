@@ -81,6 +81,8 @@ This is the raw output of the masks generated from the Grasshopper scripts.
 
 
 #### Dataset 5.2
+This dataset can be found in the "simplified" folder. The images are resized to ensure they are exactly the same size as the normal map images.
+
 Since there are so few cut lines, we may as well consolidate them with the Profile lines. "Invalid" category is discarded. Now there are only three categories to classify, which should improve the conditions. However, the dataset is still imbalanced - we have:
 - 1,557 Profile items
 - 1,016 Contour items

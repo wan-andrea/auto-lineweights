@@ -39,12 +39,25 @@ def make_masked_strokes(normal_paths, mask_paths, save_location):
             current_draw_num = draw_num
             normal_map_folder = get_folder_with_num_name(current_draw_num, normal_paths)
             normal_map_img = normal_map_folder + "\\" + "normal.jpg"
-            print(normal_map_img)
+            # print(normal_map_img)
+            # print(mask_paths + "\\" + mask_img)
     # Then we want to call create_masked_img on the
-        create_masked_img(normal_map_img, mask_img, save_location)
+        create_masked_img(normal_map_img, mask_paths + "\\" + mask_img, save_location)
 
 normal_paths = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset1"
 mask_paths = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified\\Profile"
 save_location = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified_masked\\Profile"
-
 make_masked_strokes(normal_paths, mask_paths, save_location)
+print("Done1!")
+
+normal_paths = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset1"
+mask_paths = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified\\Contour"
+save_location = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified_masked\\Contour"
+make_masked_strokes(normal_paths, mask_paths, save_location)
+print("Done2!")
+
+normal_paths = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset1"
+mask_paths = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified\\Detail"
+save_location = "C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified_masked\\Detail"
+make_masked_strokes(normal_paths, mask_paths, save_location)
+print("Done3!")
