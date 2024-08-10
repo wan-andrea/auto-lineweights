@@ -76,6 +76,19 @@ The third dataset operates at the drawing level. It consists of normal map image
 ### Dataset 5
 The fourth dataset operates at the curve level. It consists of normal map images which are masked using an outline of each curve in the drawing.
 
+#### Dataset 5.1
+This is the raw output of the masks generated from the Grasshopper scripts.
+
+
+#### Dataset 5.2
+Since there are so few cut lines, we may as well consolidate them with the Profile lines. "Invalid" category is discarded. Now there are only three categories to classify, which should improve the conditions. However, the dataset is still imbalanced - we have:
+- 1,557 Profile items
+- 1,016 Contour items
+- 585 Detail items
+
+Nevertheless, this can still be used to create the image masks.
+
+
 #### Scripts used
 The mask_maker.gh Grasshopper script offsets each of the curves in a drawing, and creates a mask image from each curve. This must be run on Dataset 1's Rhino files.
 
