@@ -15,9 +15,13 @@ def resize_images_in_folder(parent_folder, width=2550, height=3300):
         im2 = im.resize((2550, 3300))
         im2.save(path)
 
-resize_images_in_folder("C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified\\Profile")
+"""resize_images_in_folder("C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified\\Profile")
 print("Done1!")
 resize_images_in_folder("C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified\\Contour")
 print("Done2!")
 resize_images_in_folder("C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dataset5\\simplified\\Detail")
-print("Done3!")
+print("Done3!")"""
+
+resize_images_in_folder("C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dummy\\RabbitHead")
+resize_images_in_folder("C:\\Users\\andre\\Documents\\github\\auto-lineweights\\datasets\\dummy\\SheepHead")
+print("Fixed!")
