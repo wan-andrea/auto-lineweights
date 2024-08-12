@@ -120,7 +120,7 @@ print('Finished Training')
 
 # Saving the model
 print("Saving the model")
-filename = "checkpoint1"
+filename = "checkpoint1.pt" # Add file extension
 torch.save({
       'epoch': epoch,
       'model_state_dict': net.state_dict(),
